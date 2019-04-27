@@ -1,7 +1,9 @@
 import cv2
-from shapedetector import ShapeDetector
+from shapedetector.ShapeDetector import *
 
 image = cv2.imread('rectangles.jpg')
+
+print(image)
 
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(gray, (5, 5), 0)
